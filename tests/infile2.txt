@@ -1,0 +1,26 @@
+.global b,k
+.extern z
+.equ a,10
+.text
+m: sub m,r1[k]
+sub r1,*20
+subb r1,2  #proveri r1h/r1l
+subw $m,$b #za b treba da pise rel zapis
+addb r1l,a
+addw r1,a
+addb r1h,r2[5]
+sub b,k 
+sub r1[b],r1[d]
+k:
+sub z, $z
+
+.data
+d: 
+b: .word 1,a
+.align 4
+e:
+.word m,7
+.byte 1,2
+.word e
+ 
+.end			

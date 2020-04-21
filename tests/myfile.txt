@@ -1,0 +1,47 @@
+-----------------#Sadrzaji sekcija--------------------
+
+text section
+0  2c   22  44
+3  9c   a0 1400
+7  9c   a0 1b00
+b  9c   22
+d  9c   82 200
+11  9c   84 feff
+15  9c   8e d00
+19  9c   8e feff
+1d  9c   8e feff
+21  9c   8e 400
+25  c4 
+26  34   26  28
+
+data section
+0  100
+2  0
+4  2600
+6  700
+8  1
+9  2
+a  400
+
+-----------------#Sadrzaji sekcija--------------------
+SECTION      0   text           0      0      29      u
+LABEL      1   a              0      0      0      l
+LABEL      2   m              0      26      0      l
+LABEL      3   k              0      29      0      g
+SECTION      4   data           1      0      c      u
+LABEL      5   d              1      0      0      l
+LABEL      6   b              1      0      0      g
+LABEL      7   e              1      4      0      l
+
+
+rel. text
+Ofset       Tip    vrednost  
+00000013    rel     6
+0000001b    rel     6
+0000001f    rel     1
+
+rel. data
+Ofset       Tip    vrednost  
+00000002    aps     0
+00000004    aps     0
+0000000a    aps     1

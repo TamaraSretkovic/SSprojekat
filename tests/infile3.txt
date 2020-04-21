@@ -1,0 +1,6 @@
+.section mojasekcija, a,p,x
+add r1,r2
+.align 4
+.section tvojasekcija, a,p,w
+.word 10
+.end

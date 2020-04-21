@@ -1,0 +1,27 @@
+.global b,k
+.text
+a:
+add r1,r2[]
+jmp *20
+jmp m
+jmp r1
+jmp r1[2]
+jmp r2[b]
+jmp $m
+jmp $b
+jmp $d
+jmp $k
+ret
+m: sub r3,r4
+k:
+.data
+d: 
+b: .word 1,a
+.align 4
+
+e:
+.word m,7
+.byte 1,2
+.word e
+ 
+.end
